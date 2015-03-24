@@ -39,8 +39,6 @@ router.post('/verify', function (req, res) {
 		messages.push('Invalid API hostname.');
 	}
 
-	var authHeader = parseHttpHeader(req.body.authHeader);
-
 	var options = {
 		url: req.body.apiUrl,
 		headers: {
