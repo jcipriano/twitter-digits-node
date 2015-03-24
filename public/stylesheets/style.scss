@@ -1,0 +1,52 @@
+@import "compass/css3";
+@import "compass/reset";
+
+$twitter-color: #55ACEE;
+$panel-color: #222;
+$color-text: #CCC;
+$panel-border: 5px solid #333;
+
+body {
+	font-family: 'Lato';
+  background-color: #000;
+  color: $color-text;
+}
+
+a {
+	text-decoration: none;
+	color: $color-text;
+}
+
+#logo {
+	width: 20%;
+}
+
+.video-tweet-item {
+	line-height: 0;
+	width: 20%;
+	cursor: pointer;
+	
+	.content {
+		position: relative;
+
+		img {
+	    width: 100%;
+	    height: auto;
+		}
+
+		video {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.video-tweet-embed {
+			position: absolute;
+			background-color: #F00;
+		}
+	}
+}
+
+
+
+
